@@ -13,4 +13,5 @@ interface IMyAidlInterface {
 
             //提供调用的方法
             String getName();
+
 }

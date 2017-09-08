@@ -16,6 +16,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <service
+            android:exported="true"
+            android:name=".Myservice">
+            <intent-filter>
+                <action android:name="service.aidl.gjj.gjj_aidl_service"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <service
+            android:exported="true"
+            android:name=".BookManagerService">
+            <intent-filter>
+                <action android:name="service.bookmanager"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>
